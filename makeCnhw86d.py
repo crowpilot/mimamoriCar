@@ -5,7 +5,7 @@ import binascii
 import struct
 import geocoder
 
-def lnglatToData(title,lng,lat):
+def lnglat_to_data(title,lng,lat):
     #title='カラス'
     title_data=title.encode('shift-jis')
 
@@ -29,7 +29,7 @@ def lnglatToData(title,lng,lat):
     f.seek(0x830)
     f.write(title_data)
 
-def titleToData(title):
+def title_to_data(title):
     
     geo=geocoder.google(title)
     title_data=title.encode('shift-jis')
