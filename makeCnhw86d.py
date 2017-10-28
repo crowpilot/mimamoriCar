@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+#パナソニックのナビCN-HW860D用の行き先データを作ります。
+
 from __future__ import unicode_literals
 import codecs
 import binascii
